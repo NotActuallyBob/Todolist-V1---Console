@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Todolist_V1___Console {
     class Project {
-        public string Name { get; set; }
+        private string name;
+        private string description;
 
-        public Project(string name) {
-            Name = name;
+        public Project(string name_) {
+            name = name_;
+            description = "";
         }
     }
 }
