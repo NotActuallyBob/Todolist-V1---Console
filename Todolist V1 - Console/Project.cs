@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Todolist_V1___Console {
+﻿namespace Todolist {
     class Project {
         private string name;
         private string description;
@@ -20,6 +14,10 @@ namespace Todolist_V1___Console {
             tasks.Add(task);
         }
 
+        public string GetName () {
+            return name;
+        }
+
         public override string ToString() {
             string toString = String.Empty;
             toString += "Name: " + name + "\n";
@@ -29,7 +27,6 @@ namespace Todolist_V1___Console {
             foreach (Task task in tasks) {
                 toString += "\t" + task.ToString();
             }
-            toString += "\n\n";
             return toString;
         }
     }

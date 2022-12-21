@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Todolist_V1___Console {
+namespace Todolist {
     class Task {
         private string name;
         private DateTime deadline;
