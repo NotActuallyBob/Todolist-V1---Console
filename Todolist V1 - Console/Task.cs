@@ -15,5 +15,10 @@ namespace Todolist_V1___Console {
             this.deadline = DateTime.Now;
             this.done = false;
         }
+        public override string ToString() {
+            string toString = String.Empty;
+            toString += name + ", deadline: " + deadline.ToString();
+            return toString;
+        }
     }
 }

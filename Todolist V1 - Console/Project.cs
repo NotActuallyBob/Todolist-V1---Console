@@ -12,7 +12,7 @@ namespace Todolist_V1___Console {
 
         public Project(string name_) {
             name = name_;
-            description = "";
+            description = "No description";
             tasks = new List<Task>();
         }
 
@@ -21,7 +21,16 @@ namespace Todolist_V1___Console {
         }
 
         public override string ToString() {
-            return "Name: " + name + "; Description: " + description;
+            string toString = String.Empty;
+            toString += "Name: " + name + "\n";
+            toString += "Description: " + description + "\n";
+
+            toString += "Has tasks: \n";
+            foreach (Task task in tasks) {
+                toString += "\t" + task.ToString();
+            }
+            toString += "\n\n";
+            return toString;
         }
     }
 }
