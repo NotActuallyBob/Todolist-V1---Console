@@ -8,10 +8,16 @@ namespace Todolist_V1___Console {
     class Project {
         private string name;
         private string description;
+        private List<Task> tasks;
 
         public Project(string name_) {
             name = name_;
             description = "";
+            tasks = new List<Task>();
+        }
+
+        public void AddTask(Task task) {
+            tasks.Add(task);
         }
     }
 }
