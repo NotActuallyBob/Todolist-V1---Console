@@ -12,7 +12,7 @@ while (true) {
         case "list":
             Console.WriteLine("Listing all projects:");
             foreach(Project project in projects) {
-                Console.WriteLine(project.Name);
+                Console.WriteLine(project.ToString());
             }
             break;
         default:

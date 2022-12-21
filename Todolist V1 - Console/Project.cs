@@ -15,7 +15,7 @@ namespace Todolist_V1___Console {
         }
 
         public override string ToString() {
-            return name;
+            return "Name: " + name + "; Description: " + description;
         }
     }
 }
